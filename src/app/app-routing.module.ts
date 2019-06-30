@@ -2,23 +2,20 @@
  * @Author: Benjamin Lewis 
  * @Date: 2019-06-03 14:03:20 
  * @Last Modified by: Benjamin Lewis
- * @Last Modified time: 2019-06-03 14:35:27
+ * @Last Modified time: 2019-06-03 19:46:33
  */
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-/*   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: 'home',
-    loadChildren: 'app/client/client.module#ClientModule',
-    data: {
-      footer: {
-        disabled: true
-      }
-    }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { 
+    path: 'home',
+    loadChildren: './client/client.module#ClientModule',
+    data: { }
   },
-  { path: '**', redirectTo: '/login' } */
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
